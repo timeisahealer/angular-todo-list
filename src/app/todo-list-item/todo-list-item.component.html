@@ -1,0 +1,4 @@
+<li [class.completed] = "todo.complete">
+  <input type="checkbox" [checked]="todo.complete" (click)="completeTodo(todo)"> <span class="todo-title"> {{todo.title}} </span>
+</li>
+<button type="button" class="delete" (click)="removeTodo(todo)">x</button>
